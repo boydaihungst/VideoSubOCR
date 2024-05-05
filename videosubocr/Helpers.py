@@ -87,7 +87,7 @@ def runCommand(args: str, processName: str):
         processName (str): The name of the command that will be show in the cmd.
     """
 
-    process = subprocess.Popen(args)
+    process = subprocess.Popen(args, shell=True)
 
     with Progress() as progress:
 
